@@ -52,6 +52,16 @@
 			"sid": 893592620826854
 		},
 		{
+			"eventType": "variable",
+			"name": "TIEMPO",
+			"type": "number",
+			"initialValue": "5",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 216620137574193
+		},
+		{
 			"eventType": "block",
 			"conditions": [
 				{
@@ -76,6 +86,14 @@
 					"sid": 944639006337944,
 					"parameters": {
 						"text": "\"Puntuación: \" & score"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtTiempo",
+					"sid": 901260524595637,
+					"parameters": {
+						"text": "\"Tiempo: \" & Tiempo"
 					}
 				},
 				{
@@ -372,9 +390,129 @@
 		},
 		{
 			"eventType": "block",
-			"conditions": [],
-			"actions": [],
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 341317959648573,
+					"parameters": {
+						"interval-seconds": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 719640437339557,
+					"parameters": {
+						"variable": "TIEMPO",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtTiempo",
+					"sid": 250559478252601,
+					"parameters": {
+						"text": "\"Tiempo: \" & Tiempo"
+					}
+				}
+			],
 			"sid": 916268772563142
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 464166530482823,
+					"parameters": {
+						"first-value": "TIEMPO",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 768965193228013,
+					"parameters": {
+						"variable": "life",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtScore",
+					"sid": 905098037410764,
+					"parameters": {
+						"text": "\"Puntuación: \" & score"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtLife",
+					"sid": 807675675110014,
+					"parameters": {
+						"text": "\"Vidas: \" & life"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 729979416346888,
+					"parameters": {
+						"variable": "indiceActual",
+						"value": "int(random(0, Questions.WIdth - 1))"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtQuestion",
+					"sid": 855042247060841,
+					"parameters": {
+						"text": "Questions.At(indiceActual, 0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Botón1",
+					"sid": 437914758731288,
+					"parameters": {
+						"text": "Questions.At(indiceActual, 1)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Botón2",
+					"sid": 575140065528102,
+					"parameters": {
+						"text": "Questions.At(indiceActual, 2)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Botón3",
+					"sid": 388621468336603,
+					"parameters": {
+						"text": "Questions.At(indiceActual, 3)"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 964652949626873,
+					"parameters": {
+						"variable": "TIEMPO",
+						"value": "5"
+					}
+				}
+			],
+			"sid": 518893267761039
 		},
 		{
 			"eventType": "block",

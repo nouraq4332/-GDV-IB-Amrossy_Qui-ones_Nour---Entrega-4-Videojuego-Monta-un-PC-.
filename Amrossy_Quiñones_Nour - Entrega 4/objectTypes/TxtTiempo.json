@@ -1,0 +1,10 @@
+{
+	"name": "TxtTiempo",
+	"plugin-id": "Text",
+	"sid": 730718039174084,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}
