@@ -501,15 +501,6 @@
 					"parameters": {
 						"text": "Questions.At(indiceActual, 3)"
 					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 964652949626873,
-					"parameters": {
-						"variable": "TIEMPO",
-						"value": "5"
-					}
 				}
 			],
 			"sid": 518893267761039
@@ -524,6 +515,15 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 964652949626873,
+					"parameters": {
+						"variable": "TIEMPO",
+						"value": "5"
+					}
+				},
 				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
@@ -604,6 +604,15 @@
 			],
 			"actions": [
 				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 964652949626873,
+					"parameters": {
+						"variable": "TIEMPO",
+						"value": "5"
+					}
+				},
+				{
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",
 					"sid": 661231643963813,
@@ -682,6 +691,15 @@
 				}
 			],
 			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 964652949626873,
+					"parameters": {
+						"variable": "TIEMPO",
+						"value": "5"
+					}
+				},
 				{
 					"id": "subtract-from-eventvar",
 					"objectClass": "System",

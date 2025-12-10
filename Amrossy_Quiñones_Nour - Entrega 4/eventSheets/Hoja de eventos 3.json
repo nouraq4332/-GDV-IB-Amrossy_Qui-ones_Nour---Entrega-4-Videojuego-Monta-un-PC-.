@@ -14,6 +14,15 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
+					"sid": 964652949626873,
+					"parameters": {
+						"variable": "TIEMPO",
+						"value": "5"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
 					"sid": 910909940437950,
 					"parameters": {
 						"variable": "life",
