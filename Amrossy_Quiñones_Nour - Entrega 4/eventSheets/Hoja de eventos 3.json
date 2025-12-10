@@ -1,0 +1,45 @@
+{
+	"name": "Hoja de eventos 3",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Botón",
+					"sid": 536407276064305
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 910909940437950,
+					"parameters": {
+						"variable": "life",
+						"value": "3"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 107280557540148,
+					"parameters": {
+						"variable": "score",
+						"value": "0"
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 726671528368214,
+					"parameters": {
+						"layout": "juego"
+					}
+				}
+			],
+			"sid": 404625521000064
+		}
+	],
+	"sid": 540749821728977
+}
