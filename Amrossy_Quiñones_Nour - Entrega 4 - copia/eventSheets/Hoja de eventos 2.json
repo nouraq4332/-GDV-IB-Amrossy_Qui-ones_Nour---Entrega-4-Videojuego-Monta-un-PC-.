@@ -1,0 +1,48 @@
+{
+	"name": "Hoja de eventos 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "menu",
+					"sid": 656051583749055
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 687858834625645,
+					"parameters": {
+						"layout": "juego"
+					}
+				}
+			],
+			"sid": 823360040491595
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "CREDITOS",
+					"sid": 164792792565425
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 523334972488016,
+					"parameters": {
+						"layout": "creditos"
+					}
+				}
+			],
+			"sid": 770051759050951
+		}
+	],
+	"sid": 881284215462185
+}

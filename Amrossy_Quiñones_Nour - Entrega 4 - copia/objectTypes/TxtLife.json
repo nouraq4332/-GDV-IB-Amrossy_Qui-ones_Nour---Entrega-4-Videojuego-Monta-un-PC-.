@@ -1,0 +1,10 @@
+{
+	"name": "TxtLife",
+	"plugin-id": "Text",
+	"sid": 333304905449211,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

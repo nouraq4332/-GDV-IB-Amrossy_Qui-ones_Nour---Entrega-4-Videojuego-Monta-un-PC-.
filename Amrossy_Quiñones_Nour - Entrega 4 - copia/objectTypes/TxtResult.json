@@ -1,0 +1,10 @@
+{
+	"name": "TxtResult",
+	"plugin-id": "Text",
+	"sid": 916718400261510,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

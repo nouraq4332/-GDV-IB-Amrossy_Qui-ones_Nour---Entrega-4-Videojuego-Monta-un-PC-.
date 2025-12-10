@@ -1,0 +1,27 @@
+{
+	"name": "Hoja de eventos 5",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "ATRAS",
+					"sid": 483517164279546
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 235797555283026,
+					"parameters": {
+						"layout": "menu"
+					}
+				}
+			],
+			"sid": 147543565324845
+		}
+	],
+	"sid": 702627899641289
+}

@@ -1,0 +1,670 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "score",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 195893394345304
+		},
+		{
+			"eventType": "variable",
+			"name": "life",
+			"type": "number",
+			"initialValue": "3",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 102213219946215
+		},
+		{
+			"eventType": "variable",
+			"name": "virusSpeed",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 737428372681362
+		},
+		{
+			"eventType": "variable",
+			"name": "indiceActual",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 493512733242933
+		},
+		{
+			"eventType": "variable",
+			"name": "posCorrecta",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 893592620826854
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 169841635656329
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 131683228381455,
+					"parameters": {
+						"variable": "indiceActual",
+						"value": "int(random(0,2))"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtScore",
+					"sid": 944639006337944,
+					"parameters": {
+						"text": "\"Puntuación: \" & score"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtLife",
+					"sid": 728391650613486,
+					"parameters": {
+						"text": "\"Vidas: \" & life"
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 724638986774193,
+					"parameters": {
+						"x": "0",
+						"y": "0",
+						"value": "\"¿Qué es la RAM?\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 495560445226492,
+					"parameters": {
+						"x": "0",
+						"y": "1",
+						"value": "\"Memoria de acceso rápido\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 587472848189877,
+					"parameters": {
+						"x": "0",
+						"y": "2",
+						"value": "\"Memoria para imágenes\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 106957069604771,
+					"parameters": {
+						"x": "0",
+						"y": "3",
+						"value": "\"Un tipo de malware\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 229318953425680,
+					"parameters": {
+						"x": "1",
+						"y": "0",
+						"value": "\"¿Qué es phishing?\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 504602783253848,
+					"parameters": {
+						"x": "1",
+						"y": "1",
+						"value": "\"Intento de robar información\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 982753039086869,
+					"parameters": {
+						"x": "1",
+						"y": "2",
+						"value": "\"Un antivirus\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 635640760057485,
+					"parameters": {
+						"x": "1",
+						"y": "3",
+						"value": "\"Un tipo de RAM\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 353564846760681,
+					"parameters": {
+						"x": "2",
+						"y": "0",
+						"value": "\"¿Qué extensión es ejecutable en Windows?\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 923859386488981,
+					"parameters": {
+						"x": "2",
+						"y": "1",
+						"value": "\".exe\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 665791845924595,
+					"parameters": {
+						"x": "2",
+						"y": "2",
+						"value": "\".jpg\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 525541320412848,
+					"parameters": {
+						"x": "2",
+						"y": "3",
+						"value": "\".txt\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 922593229833898,
+					"parameters": {
+						"x": "3",
+						"y": "0",
+						"value": "\"¿Qué es un firewall?\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 971555964651215,
+					"parameters": {
+						"x": "3",
+						"y": "1",
+						"value": "\"Filtra conexiones y protege la red\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 229299950482508,
+					"parameters": {
+						"x": "3",
+						"y": "2",
+						"value": "\"Un tipo de memoria\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 354240533543944,
+					"parameters": {
+						"x": "3",
+						"y": "3",
+						"value": "\"Un navegador\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 983442008154897,
+					"parameters": {
+						"x": "4",
+						"y": "0",
+						"value": "\"¿Cuál contraseña es más segura?\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 465075098554172,
+					"parameters": {
+						"x": "4",
+						"y": "1",
+						"value": "\"fT9!kQ27@\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 944608316284286,
+					"parameters": {
+						"x": "4",
+						"y": "2",
+						"value": "\"123456\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 595606834445222,
+					"parameters": {
+						"x": "4",
+						"y": "3",
+						"value": "\"contraseña\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 800565919681977,
+					"parameters": {
+						"x": "5",
+						"y": "0",
+						"value": "\"¿Qué es malware?\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 662325939931409,
+					"parameters": {
+						"x": "5",
+						"y": "1",
+						"value": "\"Software malicioso\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 164845849759703,
+					"parameters": {
+						"x": "5",
+						"y": "2",
+						"value": "\"Un navegador\""
+					}
+				},
+				{
+					"id": "set-at-xy",
+					"objectClass": "Questions",
+					"sid": 117569306613236,
+					"parameters": {
+						"x": "5",
+						"y": "3",
+						"value": "\"Una tarjeta gráfica\""
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 105733379942832,
+					"parameters": {
+						"variable": "indiceActual",
+						"value": "int(random(0, Questions.WIdth - 1))"
+					}
+				},
+				{
+					"id": "append-text",
+					"objectClass": "TxtQuestion",
+					"sid": 348608888599791,
+					"parameters": {
+						"text": "Questions.At(indiceActual, 0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Botón1",
+					"sid": 363938536747041,
+					"parameters": {
+						"text": "Questions.At(indiceActual, 1)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Botón2",
+					"sid": 972897319512284,
+					"parameters": {
+						"text": "Questions.At(indiceActual, 2)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Botón3",
+					"sid": 620462701711460,
+					"parameters": {
+						"text": "Questions.At(indiceActual, 3)"
+					}
+				}
+			],
+			"sid": 899104422428137
+		},
+		{
+			"eventType": "block",
+			"conditions": [],
+			"actions": [],
+			"sid": 916268772563142
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Botón1",
+					"sid": 168785740521885
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 681197944984279,
+					"parameters": {
+						"variable": "score",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtScore",
+					"sid": 438897067616717,
+					"parameters": {
+						"text": "\"Puntuación: \" & score"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtLife",
+					"sid": 769249713556093,
+					"parameters": {
+						"text": "\"Vidas: \" & life"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 397465312194700,
+					"parameters": {
+						"variable": "indiceActual",
+						"value": "int(random(0, Questions.WIdth - 1))"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtQuestion",
+					"sid": 912023305983699,
+					"parameters": {
+						"text": "Questions.At(indiceActual, 0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Botón1",
+					"sid": 583487012674526,
+					"parameters": {
+						"text": "Questions.At(indiceActual, 1)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Botón2",
+					"sid": 341684695520965,
+					"parameters": {
+						"text": "Questions.At(indiceActual, 2)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Botón3",
+					"sid": 129989873731933,
+					"parameters": {
+						"text": "Questions.At(indiceActual, 3)"
+					}
+				}
+			],
+			"sid": 503770067304109
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Botón2",
+					"sid": 847906854943759
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 661231643963813,
+					"parameters": {
+						"variable": "life",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtScore",
+					"sid": 566352573544821,
+					"parameters": {
+						"text": "\"Puntuación: \" & score"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtLife",
+					"sid": 797225398497929,
+					"parameters": {
+						"text": "\"Vidas: \" & life"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 265203775818357,
+					"parameters": {
+						"variable": "indiceActual",
+						"value": "int(random(0, Questions.WIdth - 1))"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtQuestion",
+					"sid": 492109819320356,
+					"parameters": {
+						"text": "Questions.At(indiceActual, 0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Botón1",
+					"sid": 719938288956244,
+					"parameters": {
+						"text": "Questions.At(indiceActual, 1)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Botón2",
+					"sid": 944285284259320,
+					"parameters": {
+						"text": "Questions.At(indiceActual, 2)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Botón3",
+					"sid": 697979738188501,
+					"parameters": {
+						"text": "Questions.At(indiceActual, 3)"
+					}
+				}
+			],
+			"sid": 893171262297026
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Botón3",
+					"sid": 168413157316478
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 712470368240404,
+					"parameters": {
+						"variable": "life",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtScore",
+					"sid": 848260918374671,
+					"parameters": {
+						"text": "\"Puntuación: \" & score"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtLife",
+					"sid": 936301800784659,
+					"parameters": {
+						"text": "\"Vidas: \" & life"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 345588654512909,
+					"parameters": {
+						"variable": "indiceActual",
+						"value": "int(random(0, Questions.WIdth - 1))"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "TxtQuestion",
+					"sid": 695950951271010,
+					"parameters": {
+						"text": "Questions.At(indiceActual, 0)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Botón1",
+					"sid": 450390831825869,
+					"parameters": {
+						"text": "Questions.At(indiceActual, 1)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Botón2",
+					"sid": 928318882552771,
+					"parameters": {
+						"text": "Questions.At(indiceActual, 2)"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Botón3",
+					"sid": 797393106811874,
+					"parameters": {
+						"text": "Questions.At(indiceActual, 3)"
+					}
+				}
+			],
+			"sid": 899848447288701
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 789118423449061,
+					"parameters": {
+						"first-value": "life",
+						"comparison": 0,
+						"second-value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 953097326236153,
+					"parameters": {
+						"layout": "derrota"
+					}
+				}
+			],
+			"sid": 766988734799130
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 573370771467313,
+					"parameters": {
+						"first-value": "score",
+						"comparison": 0,
+						"second-value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 804228668543069,
+					"parameters": {
+						"layout": "victoria"
+					}
+				}
+			],
+			"sid": 801939699317170
+		}
+	],
+	"sid": 569390051292223
+}
